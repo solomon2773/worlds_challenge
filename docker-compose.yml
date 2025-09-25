@@ -1,0 +1,17 @@
+
+services:
+  graphql-app:
+    build: .
+    container_name: worldsio-graphql-app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - GRAPHQL_TOKEN_ID=${GRAPHQL_TOKEN_ID}
+      - GRAPHQL_TOKEN_VALUE=${GRAPHQL_TOKEN_VALUE}
+      - EVENT_PRODUCER_ID=${EVENT_PRODUCER_ID}
+      - GRAPHQL_HTTP_ENDPOINT=${GRAPHQL_HTTP_ENDPOINT}
+      - GRAPHQL_WS_ENDPOINT=${GRAPHQL_WS_ENDPOINT}
+      - NAME_OF_THE_EVENT=${NAME_OF_THE_EVENT:- Solomon Tsao is here for party}
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+
