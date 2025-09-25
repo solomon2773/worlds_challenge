@@ -28,8 +28,8 @@
 
 3. **Access the application:**
    - Open your browser to `http://localhost:5001`
-     default login username : WorldsIO
-     default login password : LetMe!n@2025!!!
+   - default login username : WorldsIO
+   - default login password : LetMe!n@2025!!!
 
 ## Environment Variables
 
